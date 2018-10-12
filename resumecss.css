@@ -1,0 +1,197 @@
+/* Color Palette
+#2B2D42 - darkblue
+#8D99AE - light Blue
+#EDF24F - blue/white
+#EF233C - red
+************************************ */
+
+/* Glboal Styles
+************************************ */
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+ 
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.3em;
+  line-height: 1.5;
+  margin:0 auto;
+ 
+ 
+}
+h1, h2{
+  font-family: 'Caveat', cursive;
+  }
+  h1{
+    font-size:3.5em;
+  }
+  h2{
+    font-size:2em;
+    margin-top:0;
+  }
+  h4{
+    padding:0;
+    margin:0;
+  }
+a {
+  text-decoration: none;
+  color:#EF233C;
+}
+a:hover{
+  text-decoration: none;
+  font-weight:bold;
+  }
+footer a:hover{
+  color:#fff;
+}
+header p{
+  padding: 1.2em;
+  /* text-align: center; */
+}
+
+li{
+  text-align: justify;
+}
+.content-wrap{
+  max-width:1018px;
+  margin:0 auto;
+  padding:50px;
+  overflow: auto;  
+ }
+
+  .btndownload{
+   display:inline-block;
+   background:#f94d22;
+   padding: .8em 2.5em;
+   color:#fff;
+   border-radius: 5px;
+   margin-left:3%;
+
+ }
+ .home{
+   margin:2%;
+ }
+
+ .cta{
+   margin:0;
+ }
+ footer .content-wrap{
+  /* background:#2B2D42;
+  width:80%; */
+}
+
+.col-narrow{
+  width:33.3%;   
+  float: left;
+  min-height: 175px;
+}
+.col-wide{
+  width:66.6%;
+  float: left;
+  padding-left:20px;
+  min-height: 175px;
+}
+/* header area */
+ header h1, header h2{
+   color:#fff;
+   margin:0;
+   }
+
+ /* footer area */
+ footer{
+   text-align: center;
+ }
+ .contact-info a{
+    /* background:#fff; */
+    display:block;
+    padding:6px;
+ }
+ footer p{
+   margin-bottom: -40px;
+ }
+
+/* Common Header and Footer Styles
+************************************ */
+header, footer{
+  background:#2B2D42;
+  color:#fff;
+}
+
+
+/* Work Experience Styles
+************************************ */
+.work{
+  background:#EDF2F4;
+  /* background: #ccc; */
+}
+
+
+/* Education section styles
+************************************ */
+
+.education{
+  background:#8D99AE;
+  /* background: #ccc; */
+  /* background:#EDF2F4; */
+}
+
+
+
+/* Profile picture
+************************************ */
+.profile-img{
+  /* margin-right:40px;
+  float:left;*/
+  width:300px;
+  border-radius: 50%;
+  margin-top:3%;
+}
+
+
+/* Use of break points in Media Query
+ max-width is for that break point and smaller but min-width is 
+for that value and bigger
+-------------------------- */
+@media only screen and (max-width:1017px){ 
+    header{
+    text-align: center;
+  }
+  .profile-img{
+      width:200px;
+    }
+  header .col-wide{
+    width: 100%;
+  }
+  header .col-narrow{
+      margin:0 30%;
+  }
+
+}
+
+
+@media only screen and (max-width:860px){ 
+   .work .content-wrap .col-narrow{
+    width:100%;
+    /* text-align: center; */
+  }
+  .work .content-wrap .col-wide{
+    width:100%;
+    border-bottom: 2px solid #2B2D42;
+    /* text-align: center; */
+  }
+  
+
+}
+
+@media only screen and (max-width:468px){
+  ul li{
+    margin-left: -50px;
+  }
+} 
