@@ -260,4 +260,15 @@ for that value and bigger
   ul li {
     margin-left: -50px;
   }
+
+  #skills {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #skills ul {
+    margin-left: 3rem;
+  }
 }
